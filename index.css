@@ -1,0 +1,139 @@
+:root{
+    --primary-color:rgb(40, 108, 211) ;
+    --background-color1: rgb(246, 246, 246);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    
+}
+
+.logo-container {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    padding-block: 2em;
+    color: var(--primary-color);
+}
+
+input.logoCheckBox {
+    height: 2em;
+    width: 2em;
+    accent-color:var(--primary-color);
+}
+
+.logo-container p {
+    text-decoration: underline;
+}
+
+.container {
+    background-color:var(--background-color1) ;
+    min-height: 100vh;
+    margin: 2em;
+    border-radius: 0.9em;
+    padding-inline: 3em;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.input-area {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    padding: 2em 3em;
+    border-radius: 1em;
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0 / 0.1),0 4px 6px -4px rgb(0, 0, 0 / 0.1);
+    align-items: center;
+}
+.input-container input{
+    border: none;
+    font-size: 1em;
+}
+.input-container input::placeholder{
+    font-size: 1.5em;
+}
+#todoItem{
+    flex: 1;
+}
+button{
+    border: none;
+    padding: 1em 3em;
+}
+.primary-button{
+    background-color: var(--primary-color);
+    color: var(--background-color1);
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1em 3em;
+    border-radius: 0.5em;
+}
+.icon-button{
+    background-color: transparent;
+    padding: 0.4em;
+    border-radius: 100%;
+}
+.icon-button:hover{
+    background-color: var(--background-color1);
+}
+.input-container .icon{
+color: var(--primary-color);
+font-size: 2em;
+}
+.fil-sort{
+    display: flex;
+    align-items: end;
+}
+.todoList{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.todo{
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    gap: 1.4em;
+}
+input#completed{
+    height:1.5em;
+    width: 1.5em;
+}
+.todotitle{
+    flex: 1;
+}
+.deadline{
+    background-color: white;
+    font-size: 0.7em;
+    padding: 0.8em 0.9em;
+    border: 1px solid gold;
+    border-radius: 0.5em;
+}
+.todo-buttons{
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-evenly;
+}
+.todo-button-area{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.createdDate{
+    display: flex;
+    align-items: center;
+    font-size: 0.6em;
+    gap: 0.6em;
+    color: gray;
+}
